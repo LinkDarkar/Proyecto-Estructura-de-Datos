@@ -97,7 +97,7 @@ Cosas que funcionan:
 - Los menús funcionan en su totalidad en base a listas.
 - Las "conversaciones" están hechas con listas de imágenes y funcionan en todos los casos.
 
-Cosas que no funcionan:
+Cosas que no funcionan o que pueden fallar:
 - Los elementos Electro y Cryo, y las reacciones Overloaded, ElectroCharged no se pueden realizar/utilizar en la aplicación a pesar de que están en el código.
 - La estadística de defensa no se utiliza en ningún momento en el cálculo del daño.
 - El nivel no se utiliza en ningún momento.
