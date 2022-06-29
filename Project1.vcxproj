@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{54e3799d-1e95-4921-8ceb-312e5509e0bd}</ProjectGuid>
+    <RootNamespace>Project1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Allegro_LibraryType>DynamicDebug</Allegro_LibraryType>
+    <Allegro_AddonImage>true</Allegro_AddonImage>
+    <Allegro_AddonTTF>true</Allegro_AddonTTF>
+    <Allegro_AddonPrimitives>true</Allegro_AddonPrimitives>
+    <Allegro_AddonAudio>true</Allegro_AddonAudio>
+    <Allegro_AddonAcodec>true</Allegro_AddonAcodec>
+    <Allegro_AddonPhysfs>true</Allegro_AddonPhysfs>
+    <Allegro_AddonDialog>true</Allegro_AddonDialog>
+    <Allegro_AddonMemfile>true</Allegro_AddonMemfile>
+    <Allegro_AddonFont>true</Allegro_AddonFont>
+    <Allegro_AddonColor>true</Allegro_AddonColor>
+    <Allegro_AddonVideo>true</Allegro_AddonVideo>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="list.c">
+      <DeploymentContent>true</DeploymentContent>
+    </ClCompile>
+    <ClCompile Include="Source.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AliceHabilities.csv">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Bennett.csv">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="HongMeiling.csv">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="MarisaHabilities.csv">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="menuCombate.csv">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="menuPrincipal.csv">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Patchy.csv">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="ReimuHabilities.csv">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Remi.csv">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="SakuyaHabilities.csv">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Stage01_Conversations.csv">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Stage02_Conversations.csv">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Stage03_Conversations.csv">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Sucrose.csv">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="teamSelection.csv">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="TeamVape.csv">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Xiangling.csv">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="Xingqiu.csv">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="AliceNeutral.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="cryo400x400.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="electro400x400.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="hydro400x400.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Main_Menu.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="MarisaNeutral.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="pyro400x400.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="reimu.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="ReimuNeutral.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="SakuyaNeutral.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage01_0001.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage01_0002.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage01_01.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage01_02.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage01_03.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage01_04.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage01_05.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage01_06.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage01_07.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage01_08.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage01_09.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage01_10.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage01_11.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage01_12.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage01_13.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage01_14.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage01_Fight01.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage02_01.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage02_02.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage02_03.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage02_04.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage02_05.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage02_06.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage02_07.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage02_Fight01.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage03_01.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage03_Fight01.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage_01_01.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage_01_02.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage_01_03.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage_01_04.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage_01_05.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage_01_06.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage_01_07.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage_01_08.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage_01_09.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage_01_10.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage_01_11.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage_01_12.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage_01_13.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage_01_14.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage_01_15.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage_01_16.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage_01_17.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage_01_18.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage_01_19.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage_01_20.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage_01_21.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage_01_22.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage_01_23.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage_01_24.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage_01_25.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage_01_26.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage_01_27.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage_01_28.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+    <Image Include="Stage_01_Background.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Cirno.ttf">
+      <DeploymentContent>true</DeploymentContent>
+    </Font>
+    <Font Include="F25_Bank_Printer.ttf">
+      <DeploymentContent>true</DeploymentContent>
+    </Font>
+    <Font Include="Vera.ttf">
+      <DeploymentContent>true</DeploymentContent>
+    </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="list.h">
+      <DeploymentContent>true</DeploymentContent>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="00007.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="00019.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="00034.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="00042.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="00051.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="00054.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="00104.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="03 Dragon Girl [Vs Meirin].wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="06 絆を胸に [Stage 7].wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="07 麗しき紅の城主 [Vs Remilia].wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="2022-06-24 20-25-40.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="2022-06-24-20-29-23.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="Conversation_01.ogg">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="SWR Hakurei Shrine Theme- The Ground%27s Colour is Yellow.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="SWR Pre-Battle Theme- Beautiful Nature Sight.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+    <Media Include="Touhou 11 Main Menu Theme.wav">
+      <DeploymentContent>true</DeploymentContent>
+    </Media>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\AllegroDeps.1.13.0\build\native\AllegroDeps.targets" Condition="Exists('..\packages\AllegroDeps.1.13.0\build\native\AllegroDeps.targets')" />
+    <Import Project="..\packages\Allegro.5.2.8\build\native\Allegro.targets" Condition="Exists('..\packages\Allegro.5.2.8\build\native\Allegro.targets')" />
+    <Import Project="..\packages\freetype.redist.2.8.0.1\build\native\freetype.redist.targets" Condition="Exists('..\packages\freetype.redist.2.8.0.1\build\native\freetype.redist.targets')" />
+    <Import Project="..\packages\freetype.2.8.0.1\build\native\freetype.targets" Condition="Exists('..\packages\freetype.2.8.0.1\build\native\freetype.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\AllegroDeps.1.13.0\build\native\AllegroDeps.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\AllegroDeps.1.13.0\build\native\AllegroDeps.targets'))" />
+    <Error Condition="!Exists('..\packages\Allegro.5.2.8\build\native\Allegro.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Allegro.5.2.8\build\native\Allegro.targets'))" />
+    <Error Condition="!Exists('..\packages\freetype.redist.2.8.0.1\build\native\freetype.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\freetype.redist.2.8.0.1\build\native\freetype.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\freetype.2.8.0.1\build\native\freetype.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\freetype.2.8.0.1\build\native\freetype.targets'))" />
+  </Target>
+</Project>

@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Archivos de origen">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Archivos de encabezado">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Archivos de recursos">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.c">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="list.c">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="menuPrincipal.csv" />
+    <None Include="teamSelection.csv" />
+    <None Include="Xiangling.csv" />
+    <None Include="Xingqiu.csv" />
+    <None Include="Sucrose.csv" />
+    <None Include="TeamVape.csv" />
+    <None Include="Bennett.csv" />
+    <None Include="Stage01_Conversations.csv" />
+    <None Include="HongMeiling.csv" />
+    <None Include="menuCombate.csv" />
+    <None Include="MarisaHabilities.csv" />
+    <None Include="ReimuHabilities.csv" />
+    <None Include="SakuyaHabilities.csv" />
+    <None Include="AliceHabilities.csv" />
+    <None Include="Patchy.csv" />
+    <None Include="Remi.csv" />
+    <None Include="Stage02_Conversations.csv" />
+    <None Include="Stage03_Conversations.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="reimu.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Main_Menu.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="SakuyaNeutral.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="ReimuNeutral.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="AliceNeutral.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="MarisaNeutral.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage01_0001.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage_01_Background.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage01_0002.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage01_Fight01.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="pyro400x400.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="hydro400x400.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="cryo400x400.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="electro400x400.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage_01_01.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage_01_02.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage_01_03.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage_01_04.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage_01_05.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage_01_06.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage_01_07.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage_01_08.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage_01_09.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage_01_10.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage_01_11.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage_01_12.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage_01_13.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage_01_14.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage_01_15.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage_01_16.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage_01_17.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage_01_18.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage_01_19.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage_01_20.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage_01_21.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage_01_22.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage_01_23.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage_01_24.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage_01_25.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage_01_26.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage_01_27.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage_01_28.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage01_01.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage01_02.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage01_03.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage01_04.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage01_05.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage01_06.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage01_07.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage01_08.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage01_09.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage01_10.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage01_11.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage01_12.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage01_13.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage01_14.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage02_01.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage02_02.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage02_03.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage02_04.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage02_05.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage02_06.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage02_07.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage02_Fight01.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage03_01.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+    <Image Include="Stage03_Fight01.png">
+      <Filter>Archivos de recursos</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Cirno.ttf" />
+    <Font Include="Vera.ttf" />
+    <Font Include="F25_Bank_Printer.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="list.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="00019.wav">
+      <Filter>Archivos de recursos</Filter>
+    </Media>
+    <Media Include="00042.wav">
+      <Filter>Archivos de recursos</Filter>
+    </Media>
+    <Media Include="00104.wav">
+      <Filter>Archivos de recursos</Filter>
+    </Media>
+    <Media Include="Touhou 11 Main Menu Theme.wav">
+      <Filter>Archivos de recursos</Filter>
+    </Media>
+    <Media Include="SWR Pre-Battle Theme- Beautiful Nature Sight.wav">
+      <Filter>Archivos de recursos</Filter>
+    </Media>
+    <Media Include="SWR Hakurei Shrine Theme- The Ground%27s Colour is Yellow.wav">
+      <Filter>Archivos de recursos</Filter>
+    </Media>
+    <Media Include="00007.wav">
+      <Filter>Archivos de recursos</Filter>
+    </Media>
+    <Media Include="00054.wav">
+      <Filter>Archivos de recursos</Filter>
+    </Media>
+    <Media Include="00034.wav">
+      <Filter>Archivos de recursos</Filter>
+    </Media>
+    <Media Include="00051.wav">
+      <Filter>Archivos de recursos</Filter>
+    </Media>
+    <Media Include="Conversation_01.ogg">
+      <Filter>Archivos de recursos</Filter>
+    </Media>
+    <Media Include="2022-06-24 20-25-40.wav">
+      <Filter>Archivos de recursos</Filter>
+    </Media>
+    <Media Include="2022-06-24-20-29-23.wav">
+      <Filter>Archivos de recursos</Filter>
+    </Media>
+    <Media Include="03 Dragon Girl [Vs Meirin].wav">
+      <Filter>Archivos de recursos</Filter>
+    </Media>
+    <Media Include="06 絆を胸に [Stage 7].wav">
+      <Filter>Archivos de recursos</Filter>
+    </Media>
+    <Media Include="07 麗しき紅の城主 [Vs Remilia].wav">
+      <Filter>Archivos de recursos</Filter>
+    </Media>
+  </ItemGroup>
+</Project>
